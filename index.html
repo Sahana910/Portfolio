@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sahana Hiremath | Data Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sahana Hiremath</h1>
+    <p>Undergrad | Analyst | Engineer</p></p>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <nav>
+      <a href="#about">About</a> 
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ <!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <div class="card-profile">
+    <img src="assets/profile.jpg" alt="Sahana Hiremath" class="profile-pic" />
+    </div>
+    <div class="about-text">
+      <p>
+        I'm a final-year Computer Science Engineering student at Basaveshwar Engineering College, Bagalkot.
+        Passionate about data science, analytics, and problem-solving using real-world datasets.
+      </p>
+      <p>
+        My goal is to turn raw data into meaningful insights that help organizations make smarter decisions.
+        I have experience in Python, SQL, Tableau, machine learning, and blockchain technologies.
+      </p>
+      <p>
+        I've won hackathons, built IoT-based systems, and explored advanced data visualization techniques.
+        I’m always excited to learn new tools and contribute to impactful projects.
+      </p>
+    </div>
+  </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="showDetails('air')">
+		<img src="assets/air.jpg" alt="Air Quality Detection System" class="project-img" />
+        <h3> Real-Time Air Quality Monitoring and Anomaly Detection System</h3>
+        <p>An IoT-enabled environmental monitoring system that detects air pollution levels in real time and identifies abnormal spikes using data analysis and machine learning techniques.</p>
+      </div>
+      
+      <div class="project-card" onclick="showDetails('blockchain')">
+		<img src="assets/blockchain.jpg" alt="Blockchain Evidence Tracker" class="project-img" />
+        <h3> Blockchain-Based Digital Evidence Management System</h3>
+        <p>A secure, decentralized platform for storing, tracking, and verifying digital evidence using blockchain technology.</p>
+      </div>
+      
+      <div class="project-card" onclick="showDetails('medical')">
+		<img src="assets/ai.png" alt="AI based Medical Image Diagnosis" class="project-img"/>
+        <h3>AI-Powered Medical Image Diagnosis System</h3>
+        <p>An interactive dashboard designed to analyze medical images and assist in the pre-diagnosis of health conditions using artificial intelligence and deep learning techniques.</p>
+      </div>
+
+    </div>
+    <div id="project-details"></div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <button onclick="toggleSkill('data')">📊 Data Tools</button>
+    <button onclick="toggleSkill('dev')">🛠️ Development</button>
+    <button onclick="toggleSkill('ml')">🧠 Machine Learning</button>
+    <button onclick="toggleSkill('other')">📊 Other Skills</button>
+    <div id="skill-content"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: sahanahiremath307@gmail.com | Phone: +91 9964274116</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
