@@ -27,7 +27,7 @@ header {
   background: transparent;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   border-bottom: 2px solid var(--accent-primary);
 }
 
